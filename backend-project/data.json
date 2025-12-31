@@ -1,0 +1,130 @@
+[
+	{
+		"title": "P’TIT DÉJ’ SOLIDAIRES",
+		"category": "FOOD",
+		"sub_category": "Breakfast",
+		"address": "Jardin d’Éole, 75019 Paris",
+		"description": "Entrance at the intersection of rue d’Aubervilliers and rue du Département. Metro: Stalingrad.",
+		"hours": "Mon-Sun around 8.30am"
+	},
+	{
+		"title": "SOLIDARITÉ MIGRANTS WILSON (Breakfast)",
+		"category": "FOOD",
+		"sub_category": "Breakfast",
+		"address": "15 avenue de la porte de la Villette, 75019 Paris",
+		"description": "Metro: Porte de la Villette.",
+		"hours": "Saturday 10am-12pm"
+	},
+	{
+		"title": "L’UN EST L’AUTRE / RESTO DU CŒUR",
+		"category": "FOOD",
+		"sub_category": "Lunch",
+		"address": "15 avenue Porte de la Villette, 75019 Paris",
+		"description": "Metro: Porte de la Villette.",
+		"hours": "Mon-Fri 11am-1pm, Sat-Sun 12-2pm"
+	},
+	{
+		"title": "AERI-CANTINE DES GILETS JAUNES",
+		"category": "FOOD",
+		"sub_category": "Lunch",
+		"address": "57 rue Étienne Marcel, 93100 Montreuil",
+		"description": "Pay what you can cantine. Metro: Croix de Chavaux.",
+		"hours": "Wednesday 12.30-2.30pm"
+	},
+	{
+		"title": "LA CHORBA",
+		"category": "FOOD",
+		"sub_category": "Dinner",
+		"address": "15 avenue Porte de la Villette, 75019 Paris",
+		"description": "Halal and veggie options. Metro: Porte de la Villette.",
+		"hours": "Mon-Sun 6-8pm"
+	},
+	{
+		"title": "LA GAMELLE DE JAURÈS",
+		"category": "FOOD",
+		"sub_category": "Dinner",
+		"address": "29 av. de la Porte d’Aubervilliers, 75018 Paris",
+		"description": "Metro: Porte d’Aubervilliers.",
+		"hours": "Mondays at 8pm"
+	},
+	{
+		"title": "LA FABRIQUE DU SOURIRE",
+		"category": "FOOD",
+		"sub_category": "Dinner",
+		"address": "Gare de Lyon, rue Roland Barthès, 75012 Paris",
+		"description": "Metro: Gare de Lyon.",
+		"hours": "Monday from 8pm"
+	},
+	{
+		"title": "UNE CHORBA POUR TOUS",
+		"category": "FOOD",
+		"sub_category": "Dinner",
+		"address": "135 boulevard de la Villette, 75019 Paris",
+		"description": "In front of Metro Jaurès. Come early.",
+		"hours": "Mon-Sat at 4pm"
+	},
+	{
+		"title": "RESTOS DU CŒUR (Gare de l'Est)",
+		"category": "FOOD",
+		"sub_category": "Dinner",
+		"address": "1 avenue de Verdun, 75010 Paris",
+		"description": "Metro: Gare de l’Est.",
+		"hours": "Mon, Wed, Fri 8-9pm, Sun 7.30-9pm"
+	},
+	{
+		"title": "RESTOS DU CŒUR (République)",
+		"category": "FOOD",
+		"sub_category": "Dinner",
+		"address": "Place de la république, 75003 Paris",
+		"description": "Metro: République.",
+		"hours": "Tue, Thu, Sat 8-9pm"
+	},
+	{
+		"title": "AERI (Food parcels)",
+		"category": "FOOD",
+		"sub_category": "Food parcels",
+		"address": "57 rue Étienne Marcel, 93100 Montreuil",
+		"description": "Pay what you can fruit and vegetables. Metro: Croix de Chavaux.",
+		"hours": "Monday 1.30-3pm"
+	},
+	{
+		"title": "RESTOS DU CŒUR (10th)",
+		"category": "FOOD",
+		"sub_category": "Food parcels",
+		"address": "18 rue Boy-Zelenski, 75010 Paris",
+		"description": "Metro: Colonel Fabien. Requires registration.",
+		"hours": "Tue 9am-12pm & 1.30-4.30pm, Thu 9am-12pm"
+	},
+	{
+		"title": "BAINS-DOUCHES DES HAIES",
+		"category": "SHOWERS",
+		"sub_category": "Showers",
+		"address": "27 rue des Haies, 75020 Paris",
+		"description": "Free individual cubicles. Bring your own towel/soap. Disabled Access. Metro: Buzenval.",
+		"hours": "Mon-Sun 7.30am-12.30pm. Closed 25/12 and 01/01."
+	},
+	{
+		"title": "BAINS-DOUCHES PYRÉNÉES",
+		"category": "SHOWERS",
+		"sub_category": "Showers",
+		"address": "296 rue des Pyrénées, 75020 Paris",
+		"description": "Free individual cubicles. Metro: Pyrénées.",
+		"hours": "Mon-Sat 7:30am-1:30pm, Sun 8am-12pm. Closed Wed, 25/12, 01/01."
+	},
+	{
+		"title": "LAVERIE SOLIDAIRE",
+		"category": "DAY CENTRES",
+		"sub_category": "Laundry",
+		"address": "1 rue Aboukir, 75002 Paris",
+		"description": "Metro: Sentier. Sanitary products, sockets and computers available. Access depending on availability.",
+		"hours": "Saturday 9:30am-4:30pm, come early!"
+	},
+	{
+		"title": "HALTE HUMANITAIRE DIDEROT",
+		"category": "DAY CENTRES",
+		"sub_category": "Laundry",
+		"address": " 164 boulevard Diderot, 75012 Paris",
+		"description": "Metro: Nation. Access to washrooms, social and medical support, artistic workshops and trips.",
+		"hours": "Monday-Sunday 9am-12.30pm, 2-6pm.  Closed 30th  January"
+	}
+]
