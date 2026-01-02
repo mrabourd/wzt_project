@@ -1,11 +1,15 @@
 {
-  "name": "remote-addresses",
+  "name": "frontend-project",
   "version": "1.0.0",
   "private": true,
+  "workspaces": [
+    "./host",
+    "./remote-addresses"
+  ],
   "scripts": {
-    "dev": "rsbuild dev",
-    "build": "rsbuild build",
-    "preview": "rsbuild preview"
+    "dev": "npm run dev --workspaces --if-present",
+    "start:host": "npm run dev --workspace=host",
+    "start:remote-addresses": "npm run dev --workspace=remote-addresses"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

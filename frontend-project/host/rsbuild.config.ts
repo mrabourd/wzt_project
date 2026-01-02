@@ -9,9 +9,9 @@ export default defineConfig({
   plugins: [
     pluginReact(), 
     // pluginTailwindCSS(),
-    pluginModuleFederation(mfConfig),
+    pluginModuleFederation(mfConfig)
   ],
   server: {
-    port: 3002,
+    port: 3001,
   },
 });
