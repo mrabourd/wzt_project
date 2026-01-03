@@ -1,5 +1,6 @@
 // --- Types ---
-export interface MenuItem {
+export interface MenuNav {
   name: string;
   href: string;
+  current: boolean;
 }

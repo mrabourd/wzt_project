@@ -21,25 +21,25 @@ export default function ResourceList() {
   }, []);
 
   return (
-    <div className="p-8 w-full min-h-screen bg-gray-50">
+    <div className="p-8 w-full min-h-screen bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-extrabold text-blue-700 tracking-tight">
+        <h1 className="text-3xl font-extrabold text-red-600 tracking-tight">
           Guide for Newcomers in Paris
         </h1>
         <p className="text-gray-500 mt-2">Find food, showers, and support near you.</p>
       </div>
 
       {/* Table Container */}
-      <div className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-200 overflow-hidden">
         {loading ? (
           <div className="flex justify-center items-center h-64">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-700"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-700"></div>
           </div>
         ) : (
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
-              <thead className="bg-gray-100 border-b border-gray-200">
+              <thead className="bg-gray-100 dark:bg-gray-800 border-b border-gray-200">
                 <tr>
                   <th className="px-6 py-4 text-sm font-semibold text-gray-700 uppercase">Name</th>
                   <th className="px-6 py-4 text-sm font-semibold text-gray-700 uppercase">Category</th>
@@ -51,10 +51,10 @@ export default function ResourceList() {
               <tbody className="divide-y divide-gray-100">
                 {rows.length > 0 ? (
                   rows.map((row) => (
-                    <tr key={row.id} className="hover:bg-blue-50 transition-colors">
-                      <td className="px-6 py-4 font-medium text-gray-900">{row.title}</td>
+                    <tr key={row.id} className="hover:bg-red-50 transition-colors">
+                      <td className="px-6 py-4 font-medium text-gray-900 dark:text-white-700">{row.title}</td>
                       <td className="px-6 py-4">
-                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 border border-blue-200">
+                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 border border-red-200">
                           {row.category}
                         </span>
                       </td>

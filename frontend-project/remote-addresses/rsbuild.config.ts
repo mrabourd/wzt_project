@@ -11,6 +11,17 @@ export default defineConfig({
     pluginTailwindCSS(),
     pluginModuleFederation(mfConfig),
   ],
+  dev: {
+    watchFiles: [
+      {
+        paths: ['src/**/*'],
+        options: {
+          usePolling: true,
+          interval: 1000,
+        },
+      },
+    ],
+  },
   server: {
     port: 3002,
   },

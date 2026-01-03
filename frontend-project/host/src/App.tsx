@@ -1,9 +1,9 @@
-import './App.css';
 import React, { Suspense, useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ErrorBoundary } from 'react-error-boundary';
-import Sidebar from './components/Sidebar';
+import Navbar from './components/Navbar';
 import Mode from './components/Mode';
+import './App.css';
 
 const RemoteResourceList = React.lazy(() => import('addresses/ResourceList'));
 
@@ -25,14 +25,14 @@ const App = () => {
   }, [darkMode]);
 
   return (
+
     <BrowserRouter>
-      <div className="flex min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
-        <Sidebar />
+      <div className="flex min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+        <Navbar />
         <Mode darkMode={darkMode} setDarkMode={setDarkMode} />
-        
-        <div className="flex-grow ml-72 flex flex-col">
+        <div className="flex-grow flex flex-col">
           
-          <main className="p-8 mt-16"> {/* mt-16 pour compenser la hauteur du header */}
+          <main className="flex-grow p-12">
             <Suspense fallback={<div className="p-10 text-gray-400">Loading layout...</div>}>
               <Routes>
                 <Route path="/" element={
@@ -44,7 +44,7 @@ const App = () => {
                 
                 <Route path="/addresses" element={
                   <ErrorBoundary fallback={<div className="p-6 bg-red-50 text-red-700 rounded-lg">Error...</div>}>
-                    <Suspense fallback={<div className="p-10 text-blue-600 animate-pulse">Loading Remote...</div>}>
+                    <Suspense fallback={<div className="p-10 text-red-600 animate-pulse">Loading Remote...</div>}>
                       <RemoteResourceList />
                     </Suspense>
                   </ErrorBoundary>
