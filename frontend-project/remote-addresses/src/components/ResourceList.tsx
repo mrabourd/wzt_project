@@ -1,25 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { Resource } from '../types/Resource';
-import { DataGrid } from '@mui/x-data-grid';
-import type {GridColDef } from '@mui/x-data-grid';
 import axios from 'axios';
-import { Typography, Box, Chip } from '@mui/material';
-
-const columns: GridColDef[] = [
-  { field: 'id', headerName: 'ID', width: 70 },
-  { field: 'title', headerName: 'Name', width: 250 },
-  { 
-    field: 'category', 
-    headerName: 'Category', 
-    width: 130,
-    renderCell: (params) => (
-      <Chip label={params.value} color="primary" variant="outlined" size="small" />
-    )
-  },
-  { field: 'sub_category', headerName: 'Type', width: 130 },
-  { field: 'address', headerName: 'Address', width: 300 },
-  { field: 'hours', headerName: 'Opening Hours', width: 400 },
-];
 
 export default function ResourceList() {
   const [rows, setRows] = useState<Resource[]>([]);
@@ -36,30 +17,64 @@ export default function ResourceList() {
         setLoading(false);
       }
     };
-
     fetchData();
   }, []);
 
   return (
-    <Box sx={{ height: 600, width: '100%', p: 4 }}>
-      <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold', color: '#1976d2' }}>
-        Guide for Newcomers in Paris
-      </Typography>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        getRowId={(row) => row.id}
-        // pageSize={10}
-        // rowsPerPageOptions={[10]}
-        loading={loading}
-        sx={{
-          backgroundColor: 'white',
-          boxShadow: 2,
-          border: 2,
-          borderColor: '#e0e0e0',
-          '& .MuiDataGrid-cell:hover': { color: 'primary.main' },
-        }}
-      />
-    </Box>
+    <div className="p-8 w-full min-h-screen bg-gray-50">
+      {/* Header */}
+      <div className="mb-8">
+        <h1 className="text-3xl font-extrabold text-blue-700 tracking-tight">
+          Guide for Newcomers in Paris
+        </h1>
+        <p className="text-gray-500 mt-2">Find food, showers, and support near you.</p>
+      </div>
+
+      {/* Table Container */}
+      <div className="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+        {loading ? (
+          <div className="flex justify-center items-center h-64">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-700"></div>
+          </div>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse">
+              <thead className="bg-gray-100 border-b border-gray-200">
+                <tr>
+                  <th className="px-6 py-4 text-sm font-semibold text-gray-700 uppercase">Name</th>
+                  <th className="px-6 py-4 text-sm font-semibold text-gray-700 uppercase">Category</th>
+                  <th className="px-6 py-4 text-sm font-semibold text-gray-700 uppercase">Type</th>
+                  <th className="px-6 py-4 text-sm font-semibold text-gray-700 uppercase">Address</th>
+                  <th className="px-6 py-4 text-sm font-semibold text-gray-700 uppercase">Opening Hours</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                {rows.length > 0 ? (
+                  rows.map((row) => (
+                    <tr key={row.id} className="hover:bg-blue-50 transition-colors">
+                      <td className="px-6 py-4 font-medium text-gray-900">{row.title}</td>
+                      <td className="px-6 py-4">
+                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 border border-blue-200">
+                          {row.category}
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 text-gray-600 italic text-sm">{row.sub_category}</td>
+                      <td className="px-6 py-4 text-gray-600 text-sm">{row.address}</td>
+                      <td className="px-6 py-4 text-gray-500 text-sm whitespace-pre-line">{row.hours}</td>
+                    </tr>
+                  ))
+                ) : (
+                  <tr>
+                    <td colSpan={5} className="px-6 py-12 text-center text-gray-500 italic">
+                      No resources found.
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
+    </div>
   );
 }

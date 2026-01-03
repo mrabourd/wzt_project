@@ -18,8 +18,7 @@ Ce projet utilise une approche **Micro-frontend** pour permettre une scalabilit�
 ### Front-end
 - **Langage :** TypeScript 
 - **Framework :** React.js
-- **Styling :** Tailwind CSS & MUI (Material UI)
-- **Composants Avancés :** MUI X (DataGrid, Pickers)
+- **Styling :** Tailwind CSS
 - **Bundler :** RSBuild (Rspack stack)
 
 ### Back-end
@@ -63,4 +62,34 @@ sudo service postgresql status
 stop:
 ```bash
 sudo service postgresql stop
+```
+
+### 4. Run with script sh and tmux
+- First install tmux
+
+Debian or Ubuntu:
+```bash
+apt install tmux
+```
+
+- Then, run:
+```bash
+bash starting.sh
+```
+
+- See all windows:
+```bash
+Ctl b
+w
+```
+Navigate in different windows with ⬆️ and ⬇️
+
+- List all sessions running:
+```bash
+tmux list-sessions
+```
+
+- Kill session:
+```bash
+tmux kill-ses -t [mysession]
 ```

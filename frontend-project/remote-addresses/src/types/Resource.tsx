@@ -5,5 +5,5 @@ export interface Resource {
   sub_category: string;
   address: string;
   hours: string;
-  description?: string; // Le '?' signifie que c'est optionnel
+  description?: string;
 }
