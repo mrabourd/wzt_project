@@ -39,8 +39,13 @@ export class ResourcesService implements OnApplicationBootstrap {
       console.error('--- ❌ Error :', error.message);
     }
   }
-
-  async findAll() {
+  
+  async findAll(category?: string) {
+    if (category && category.toLowerCase() !== 'all') {
+      return await this.resourceRepository.find({
+        where: { category: category.toUpperCase() }
+      });
+    }
     return await this.resourceRepository.find();
   }
 

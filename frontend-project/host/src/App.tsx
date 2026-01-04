@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Mode from './components/Mode';
 import './App.css';
 
-const RemoteResourceList = React.lazy(() => import('addresses/ResourceList'));
+const AddressModule = React.lazy(() => import('addresses/AddressPage'));
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(() => {
@@ -27,12 +27,12 @@ const App = () => {
   return (
 
     <BrowserRouter>
-      <div className="flex min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+      <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
         <Navbar />
         <Mode darkMode={darkMode} setDarkMode={setDarkMode} />
-        <div className="flex-grow flex flex-col">
+        {/* <div className="flex-grow flex flex-col"> */}
           
-          <main className="flex-grow p-12">
+          <main className="flex-grow pt-16 p-12">
             <Suspense fallback={<div className="p-10 text-gray-400">Loading layout...</div>}>
               <Routes>
                 <Route path="/" element={
@@ -45,7 +45,7 @@ const App = () => {
                 <Route path="/addresses" element={
                   <ErrorBoundary fallback={<div className="p-6 bg-red-50 text-red-700 rounded-lg">Error...</div>}>
                     <Suspense fallback={<div className="p-10 text-red-600 animate-pulse">Loading Remote...</div>}>
-                      <RemoteResourceList />
+                      <AddressModule />
                     </Suspense>
                   </ErrorBoundary>
                 } />
@@ -55,7 +55,7 @@ const App = () => {
               </Routes>
             </Suspense>
           </main>
-        </div>
+        {/* </div> */}
       </div>
     </BrowserRouter>
   );

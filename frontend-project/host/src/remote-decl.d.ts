@@ -1,1 +1,1 @@
-declare module 'addresses/ResourceList';
+declare module 'addresses/AddressPage';

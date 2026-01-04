@@ -3,7 +3,7 @@ import { createModuleFederationConfig } from '@module-federation/rsbuild-plugin'
 export default createModuleFederationConfig({
   name: 'remote_addresses',
   exposes: {
-    './ResourceList': './src/components/ResourceList.tsx',
+    './AddressPage': './src/pages/AddressPage.tsx',
   },
   filename: 'ResourceList',
   shared: {
