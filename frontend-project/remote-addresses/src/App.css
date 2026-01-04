@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --guide-title: #c0625f;
+  --guide-red: #b92d25;
+  --guide-blue: #3a4995;
+  --guide-green: #3f9970;
+  --guide-yellow: #fbaf35;
+  --guide-pink: #ed008c;
+  --guide-blue-light: #96a7ff;
+}
+
 .dark body {
   background-color: #1a202c !important;
   color: #d5e3ff

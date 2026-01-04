@@ -38,7 +38,11 @@ export default function Navbar() {
 
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <h1 className="text-xl font-black text-red-700 tracking-tighter">Paris Guide</h1>
+              <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
+                <h1 className="text-xl font-black text-guide-title tracking-tighter">
+                  Paris Guide
+                </h1>
+              </Link>
             </div>
 
             <div className="hidden sm:ml-6 sm:block">
@@ -54,7 +58,7 @@ export default function Navbar() {
                       aria-current={isCurrent ? 'page' : undefined}
                       className={classNames(
                         isCurrent 
-                          ? 'bg-red-700 text-white'
+                          ? 'bg-guide-title-700 text-white'
                           : 'text-gray-300/300 hover:bg-white/5 hover:text-gray-400 dark:hover:text-white',
                         'rounded-md px-3 py-2 text-sm font-medium transition-colors',
                       )}
@@ -83,7 +87,7 @@ export default function Navbar() {
                 aria-current={isCurrent ? 'page' : undefined}
                 className={classNames(
                   isCurrent 
-                    ? 'bg-red-700 text-white' 
+                    ? 'bg-guide-title-700 text-white' 
                     : 'text-gray-300/300 hover:bg-white/5 hover:text-gray-400 dark:hover:text-white',
                   'block rounded-md px-3 py-2 text-base font-medium transition-colors',
                 )}
