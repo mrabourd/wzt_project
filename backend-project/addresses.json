@@ -150,5 +150,77 @@
 		"address": " 47-83 bd. de l’Hôpital, 75013 Paris",
 		"description": "Metro:  Saint-Marcel.",
 		"hours": "Monday-Friday: 8.30am-4.30pm  Make appointment Monday-Friday 8.30am-4.30pm by calling 01 42 17 84 16 or on the website"
-	}
+	},
+{
+        "title": "AMNESTY INTERNATIONAL",
+        "category": "FREE LEGAL AID",
+        "sub_category": "Asylum claims and stateless persons",
+        "address": "72-76 boulevard de la Villette, 75019 Paris",
+        "description": "Metro: Colonel-Fabien. Phone: 01 53 38 65 65.",
+        "hours": "Wednesday 3-6pm, Tuesday 30th December 3-6pm. Closed Wednesday 24th and 31st December"
+    },
+    {
+        "title": "BUS DE LA SOLIDARITÉ - PORTE D’AUBERVILLIERS",
+        "category": "FREE LEGAL AID",
+        "sub_category": "Immigration law",
+        "address": "Avenue de la porte d’Aubervilliers, by the Jardin Anaïs Nin 75019 Paris",
+        "description": "Free lawyers from the Paris Bar. For asylum and immigration law. The blue bus. Metro: Porte d’Aubervilliers. Attended by Maraude France Terre d’Asile.",
+        "hours": "Fridays 2-5pm. Arrive early! Closed 26th December"
+    },
+    {
+        "title": "BUS DE LA SOLIDARITÉ - LA CHAPELLE",
+        "category": "FREE LEGAL AID",
+        "sub_category": "Immigration law",
+        "address": "Place de la Chapelle, 75018 Paris",
+        "description": "Free lawyers from the Paris Bar. The blue bus. Metro: La Chapelle.",
+        "hours": "Tuesdays 1-4pm Arrive early! Closed 30th December"
+    },
+    {
+        "title": "CIMADE BATIGNOLLES",
+        "category": "FREE LEGAL AID",
+        "sub_category": "OQTF and IRTF appeals",
+        "address": "46 bd. des Batignolles, 75017 Paris",
+        "description": "Metro: Rome. Assistance with OQTF and IRTF appeals. Phone: 01 40 08 05 34.",
+        "hours": "Without appt: Wed 9.30am-12.45pm & 1.45-5.30pm, Thu 9.30am-12.30pm & 2-5.30pm. By appt: Wed 5-9pm, Thu 9.30am-12.30pm, 2-5.30pm, 6-9pm."
+    },
+    {
+        "title": "CIMADE LUXEMBOURG",
+        "category": "FREE LEGAL AID",
+        "sub_category": "Residency and Asylum",
+        "address": "58 rue Madame, 75006 Paris (entrance 11 rue Jean Bart)",
+        "description": "Metro: Rennes / Saint Placide. Phone: 01 42 22 75 77.",
+        "hours": "Without appt: Thu 2-8pm (residency). By appt: Tue 9am-1pm (asylum), Wed 10am-12.30pm (residency)."
+    },
+    {
+        "title": "CIMADE FESSART",
+        "category": "FREE LEGAL AID",
+        "sub_category": "Legal Aid",
+        "address": "25 rue Fessart, 75019 Paris",
+        "description": "Metro: Jourdain. With or without appointment. Phone: 01 42 45 65 07.",
+        "hours": "Monday 6.30-9pm, Tuesday 8.30am-12.30pm"
+    },
+    {
+        "title": "CIMADE DENFERT-ROCHEREAU",
+        "category": "FREE LEGAL AID",
+        "sub_category": "Legal Aid",
+        "address": "76 rue Daguerre, 75014 Paris",
+        "description": "Metro: Gaité. With or without appointment. Phone: 01 40 08 05 34.",
+        "hours": "Monday 2.30-5.30pm, Wednesday 9.30am-12.30pm"
+    },
+    {
+        "title": "PARIS ADRESSE - INITIAL ENQUIRIES",
+        "category": "DOMICILIATION",
+        "sub_category": "Domiciliation service",
+        "address": "10 Rue Eugénie Eboué, 75012 Paris",
+        "description": "Metro: Reuilly - Diderot. Initial enquiries by appointment only via paris.fr/pages/vivre-au-quotidien-112.",
+        "hours": "Monday-Friday 9am-5pm, Wednesday 9am-12.30pm"
+    },
+    {
+        "title": "PARIS ADRESSE - POSTAL COLLECTION",
+        "category": "DOMICILIATION",
+        "sub_category": "Postal collection",
+        "address": "90 rue Saint-Denis, 75001 Paris",
+        "description": "Metro: Rambuteau. Collection of mail.",
+        "hours": "Monday-Friday 8am-6pm, Thursday 8am-7pm"
+    }
 ]

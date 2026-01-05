@@ -1,30 +1,22 @@
 {
-  "name": "frontend-project",
+  "name": "remote-procedures",
   "version": "1.0.0",
   "private": true,
-  "workspaces": [
-    "./remote-addresses",
-    "./remote-procedures",
-    "./host"
-  ],
   "scripts": {
-    "dev": "npm run dev --workspaces --if-present",
-    "start:remote-addresses": "npm run dev --workspace=remote-addresses",
-    "start:remote-procedures": "npm run dev --workspace=remote-procedures",
-    "start:host": "npm run dev --workspace=host"
+    "dev": "rsbuild dev",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.1",
-    "@headlessui/tailwindcss": "^0.2.2",
-    "@mui/material": "^6.5.0",
-    "@mui/x-data-grid": "^8.23.0",
+    "@heroicons/react": "^2.2.0",
+    "@iconscout/react-unicons": "^2.2.5",
     "@mui/x-date-pickers": "^8.23.0",
     "axios": "^1.13.2",
     "date-fns": "^4.1.0",
+    "lucide-react": "^0.562.0",
+    "postcss-loader": "^8.2.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "react-error-boundary": "^6.0.1",
     "react-router-dom": "^7.11.0"
   },
   "devDependencies": {
@@ -32,12 +24,15 @@
     "@rsbuild/core": "^1.6.14",
     "@rsbuild/plugin-react": "^1.4.2",
     "@rstest/core": "^0.7.2",
+    "@tailwindcss/postcss": "^4.1.18",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.23",
     "jsdom": "^27.3.0",
+    "postcss": "^8.5.6",
     "rsbuild-plugin-tailwindcss": "^0.2.3",
     "tailwindcss": "^3.4.19",
     "typescript": "^5.9.3"

@@ -14,11 +14,15 @@ tmux new-session -d -s $SESSION -n "backend" "cd backend-project && npm run star
 sleep 5
 
 echo "📂 remote-addresses..."
-tmux new-window -t $SESSION:1 -n "remote" "cd frontend-project && npm run dev -w remote-addresses; exec bash"
+tmux new-window -t $SESSION:1 -n "remote-add" "cd frontend-project && npm run dev -w remote-addresses; exec bash"
+sleep 10
+
+echo "📂 remote-procedures..."
+tmux new-window -t $SESSION:2 -n "remote-proc" "cd frontend-project && npm run dev -w remote-procedures; exec bash"
 sleep 10
 
 echo "📂 host..."
-tmux new-window -t $SESSION:2 -n "host" "cd frontend-project && npm run dev -w host; exec bash"
+tmux new-window -t $SESSION:3 -n "host" "cd frontend-project && npm run dev -w host; exec bash"
 
 echo "⏳ waiting for servers..."
 sleep 15

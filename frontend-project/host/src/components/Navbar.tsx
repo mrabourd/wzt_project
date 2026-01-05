@@ -1,16 +1,8 @@
 import './../App.css';
 import { useLocation, Link } from 'react-router-dom';
-import type { MenuNav } from '../types/MenuNav';
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-
-
-const navigation: MenuNav[] = [
-  { name: 'ARRIVING IN PARIS', href: '/arriving', color: 'guide-green'},
-  { name: 'USEFUL ADDRESSES', href: '/addresses', color: 'guide-blue'},
-  { name: 'YOUR SOCIAL RIGHTS', href: '/rights', color: 'guide-yellow'},
-  { name: 'PROCEDURES', href: '/procedures', color: 'guide-red'},
-];
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { NAVIGATION_ITEMS } from '../constants/Navigation';
 
 function classNames(...classes: (string | boolean | undefined | null)[]) {
   return classes.filter(Boolean).join(' ');
@@ -23,10 +15,10 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="fixed top-0 left-0 w-full z-50 bg-gray-800/10 after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
+      className="fixed top-0 left-0 w-full z-50 bg-gray-750/20"
     >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center justify-between">
+        <div className="relative flex h-16 items-center justify-between backdrop-blur-md">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
@@ -48,7 +40,7 @@ export default function Navbar() {
 
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                {navigation.map((item) => {
+                {NAVIGATION_ITEMS.map((item) => {
 
                   const isCurrent = location.pathname === item.href;
 
@@ -77,7 +69,7 @@ export default function Navbar() {
 
       <DisclosurePanel className="sm:hidden backdrop-blur-md">
         <div className="space-y-1 px-2 pt-2 pb-3">
-          {navigation.map((item) => {
+          {NAVIGATION_ITEMS.map((item) => {
             const isCurrent = location.pathname === item.href;
             
             return (

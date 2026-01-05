@@ -18,7 +18,7 @@ export class ResourcesService implements OnApplicationBootstrap {
   async onApplicationBootstrap() {
     console.log('--- 🔄 Synchronising the JSON data... ---');
     try {
-      const filePath = path.resolve(process.cwd(), 'data.json');
+      const filePath = path.resolve(process.cwd(), 'addresses.json');
       const fileContent = fs.readFileSync(filePath, 'utf8');
       const resources = JSON.parse(fileContent);
 

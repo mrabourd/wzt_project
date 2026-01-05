@@ -7,7 +7,7 @@ export const AddressPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(true);
 
   return (
-    <div className="flex bg-gray-750/20 min-h-screen relative">
+    <div className="flex min-h-screen relative">
       {/* Category */}
       <CategoryMenu 
         activeCategory={activeCategory} 
@@ -17,9 +17,9 @@ export const AddressPage = () => {
       />
       
       {/* Main page */}
-      <main className={`flex-1 p-8 transition-all duration-300 ${isMenuOpen ? 'ml-56 sm:ml-64' : 'ml-20'}`}>
+      <main className={`flex-1 p-8 transition-all duration-300 ${isMenuOpen ? 'ml-48 sm:ml-64' : 'ml-20'}`}>
         <header className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-50/800 capitalize">
+          <h1 className="text-3xl font-bold text-gray-50/800 capitalize text-guide-blue">
             {activeCategory.toLowerCase()} Resources
           </h1>
         </header>

@@ -1,11 +1,12 @@
 import { createModuleFederationConfig } from '@module-federation/rsbuild-plugin';
+import tailwindConfig from './tailwind.config.cjs';
 
 export default createModuleFederationConfig({
-  name: 'host',
-  remotes: {
-    addresses: 'remote_addresses@http://localhost:3002/mf-manifest.json',
-    procedures: 'remote_procedures@http://localhost:3003/mf-manifest.json',
+  name: 'remote_procedures',
+  exposes: {
+    './ProceduresPage': './src/layout/ProceduresPage.tsx',
   },
+  filename: 'ProceduresList',
   shared: {
     // ...dependencies,
     react: {
@@ -15,5 +16,5 @@ export default createModuleFederationConfig({
       singleton: true,
     },
   },
-  dts: false,
+  dts: false
 });
