@@ -1,4 +1,5 @@
 import { createModuleFederationConfig } from '@module-federation/rsbuild-plugin';
+import tailwindConfig from './tailwind.config.cjs';
 
 export default createModuleFederationConfig({
   name: 'remote_addresses',

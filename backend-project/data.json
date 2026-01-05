@@ -126,5 +126,29 @@
 		"address": " 164 boulevard Diderot, 75012 Paris",
 		"description": "Metro: Nation. Access to washrooms, social and medical support, artistic workshops and trips.",
 		"hours": "Monday-Sunday 9am-12.30pm, 2-6pm.  Closed 30th  January"
+	},
+	{
+		"title": "HÔPITAL SAINT-LOUIS ",
+		"category": "HEALTHCARE",
+		"sub_category": "General health",
+		"address": " 1 avenue Claude-Vellefaux, 75010 Paris ",
+		"description": "By appointment only. Call on Monday, Tuesday, Thursday or Friday 10am-2pm to make an appointment; 01 42 49 91 30. Metro:  Colonel Fabien",
+		"hours": "Monday-Friday from 8.30am"
+	},
+	{
+		"title": "HÔTEL-DIEU",
+		"category": "HEALTHCARE",
+		"sub_category": "General health",
+		"address": " 1 rue de la Cité 75004 Paris ",
+		"description": "Metro: Saint Michel / Cité",
+		"hours": "Closed 24th December-6th January. From 15 years and 3 months old: Without appointment 7.30am, registration at 7.30am and between 10.30am-1pm"
+	},
+	{
+		"title": "HÔPITAL PITIÉ SALPÊTRIÈRE",
+		"category": "HEALTHCARE",
+		"sub_category": "Teeth",
+		"address": " 47-83 bd. de l’Hôpital, 75013 Paris",
+		"description": "Metro:  Saint-Marcel.",
+		"hours": "Monday-Friday: 8.30am-4.30pm  Make appointment Monday-Friday 8.30am-4.30pm by calling 01 42 17 84 16 or on the website"
 	}
 ]

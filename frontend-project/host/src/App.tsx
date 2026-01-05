@@ -32,7 +32,7 @@ const App = () => {
         <Mode darkMode={darkMode} setDarkMode={setDarkMode} />
         {/* <div className="flex-grow flex flex-col"> */}
           
-          <main className="flex-grow pt-16 p-12">
+          <main className="flex-grow pt-16">
             <Suspense fallback={<div className="p-10 text-gray-400">Loading layout...</div>}>
               <Routes>
                 <Route path="/" element={
@@ -51,6 +51,7 @@ const App = () => {
                 } />
                 
                 <Route path="/arriving" element={<div className="p-10 text-gray-400 italic dark:text-gray-500">Not ready yet</div>} />
+                <Route path="/rights" element={<div className="p-10 text-gray-400 italic dark:text-gray-500">Not ready yet</div>} />
                 <Route path="/procedures" element={<div className="p-10 text-gray-400 italic dark:text-gray-500">Not ready yet</div>} />
               </Routes>
             </Suspense>

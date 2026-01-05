@@ -9,9 +9,11 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@iconscout/react-unicons": "^2.2.5",
     "@mui/x-date-pickers": "^8.23.0",
     "axios": "^1.13.2",
     "date-fns": "^4.1.0",
+    "lucide-react": "^0.562.0",
     "postcss-loader": "^8.2.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
