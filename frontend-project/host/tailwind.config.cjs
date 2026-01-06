@@ -7,17 +7,17 @@ export default {
   html: {
     template: './src/index.html',
   },
-  // theme: {
-  //   extend: {
-  //     colors: {
-  //       'guide-title': '#c0625f',
-  //       'guide-red': '#b92d25',
-  //       'guide-blue': '#3a4995',
-  //       'guide-green': '#3f9970',
-  //       'guide-yellow': '#fbaf35',
-  //       'guide-pink': '#ed008c',
-  //     }
-  //   },
-  // },
+  theme: {
+    extend: {
+      colors: {
+        'guide-title': '#c0625f',
+        'guide-red': '#b92d25',
+        'guide-blue': '#3a4995',
+        'guide-green': '#3f9970',
+        'guide-yellow': '#fbaf35',
+        'guide-pink': '#ed008c',
+      }
+    },
+  },
   plugins: [],
 }

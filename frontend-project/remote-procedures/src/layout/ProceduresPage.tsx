@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Sidebar, CATEGORIES } from '../components/Sidebar';
+import { Sidebar } from '../components/Sidebar';
+import { CATEGORIES } from '../constants/Categories';
 import { WhatIsAsylum } from '../pages/WhatIsAsylum';
 
 export const ProceduresPage = () => {
@@ -13,7 +14,7 @@ export const ProceduresPage = () => {
         return <WhatIsAsylum />;
       case 'permits':
         return <div>Contenu des titres de séjour...</div>;
-      // Ajoute les autres cas ici...
+      // Add other pages...
       default:
         return <WhatIsAsylum />;
     }

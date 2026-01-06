@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
-@Entity('resources') // Nom de la table dans Postgres
+@Entity('resources') 
 export class Resource {
     @PrimaryGeneratedColumn()
     id: number;
@@ -9,7 +9,7 @@ export class Resource {
     title: string;
 
     @Column()
-    category: string; // Ex: "Food", "Legal aid", "Shower"
+    category: string; 
 
 	@Column({ nullable: true })
 	sub_category: string;
@@ -19,6 +19,9 @@ export class Resource {
 
     @Column({ type: 'text', nullable: true })
     description: string;
+
+    @Column({ nullable: true })
+    phone: string;
 
     @Column({ nullable: true })
     hours: string;

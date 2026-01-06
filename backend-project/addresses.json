@@ -156,8 +156,9 @@
         "category": "FREE LEGAL AID",
         "sub_category": "Asylum claims and stateless persons",
         "address": "72-76 boulevard de la Villette, 75019 Paris",
-        "description": "Metro: Colonel-Fabien. Phone: 01 53 38 65 65.",
-        "hours": "Wednesday 3-6pm, Tuesday 30th December 3-6pm. Closed Wednesday 24th and 31st December"
+        "description": "Metro: Colonel-Fabien.",
+        "hours": "Wednesday 3-6pm, Tuesday 30th December 3-6pm. Closed Wednesday 24th and 31st December",
+		"phone": "01 53 38 65 65"
     },
     {
         "title": "BUS DE LA SOLIDARITÉ - PORTE D’AUBERVILLIERS",
@@ -180,32 +181,36 @@
         "category": "FREE LEGAL AID",
         "sub_category": "OQTF and IRTF appeals",
         "address": "46 bd. des Batignolles, 75017 Paris",
-        "description": "Metro: Rome. Assistance with OQTF and IRTF appeals. Phone: 01 40 08 05 34.",
-        "hours": "Without appt: Wed 9.30am-12.45pm & 1.45-5.30pm, Thu 9.30am-12.30pm & 2-5.30pm. By appt: Wed 5-9pm, Thu 9.30am-12.30pm, 2-5.30pm, 6-9pm."
+        "description": "Metro: Rome. Assistance with OQTF and IRTF appeals.",
+        "hours": "Without appt: Wed 9.30am-12.45pm & 1.45-5.30pm, Thu 9.30am-12.30pm & 2-5.30pm. By appt: Wed 5-9pm, Thu 9.30am-12.30pm, 2-5.30pm, 6-9pm.",
+		"phone": "01 40 08 05 34"
     },
     {
         "title": "CIMADE LUXEMBOURG",
         "category": "FREE LEGAL AID",
         "sub_category": "Residency and Asylum",
         "address": "58 rue Madame, 75006 Paris (entrance 11 rue Jean Bart)",
-        "description": "Metro: Rennes / Saint Placide. Phone: 01 42 22 75 77.",
-        "hours": "Without appt: Thu 2-8pm (residency). By appt: Tue 9am-1pm (asylum), Wed 10am-12.30pm (residency)."
+        "description": "Metro: Rennes / Saint Placide.",
+        "hours": "Without appt: Thu 2-8pm (residency). By appt: Tue 9am-1pm (asylum), Wed 10am-12.30pm (residency).",
+		"phone": "01 42 22 75 77"
     },
     {
         "title": "CIMADE FESSART",
         "category": "FREE LEGAL AID",
         "sub_category": "Legal Aid",
         "address": "25 rue Fessart, 75019 Paris",
-        "description": "Metro: Jourdain. With or without appointment. Phone: 01 42 45 65 07.",
-        "hours": "Monday 6.30-9pm, Tuesday 8.30am-12.30pm"
+        "description": "Metro: Jourdain. With or without appointment.",
+        "hours": "Monday 6.30-9pm, Tuesday 8.30am-12.30pm",
+		"phone": "01 42 45 65 07"
     },
     {
         "title": "CIMADE DENFERT-ROCHEREAU",
         "category": "FREE LEGAL AID",
         "sub_category": "Legal Aid",
         "address": "76 rue Daguerre, 75014 Paris",
-        "description": "Metro: Gaité. With or without appointment. Phone: 01 40 08 05 34.",
-        "hours": "Monday 2.30-5.30pm, Wednesday 9.30am-12.30pm"
+        "description": "Metro: Gaité. With or without appointment.",
+        "hours": "Monday 2.30-5.30pm, Wednesday 9.30am-12.30pm",
+		"phone": "01 40 08 05 34"
     },
     {
         "title": "PARIS ADRESSE - INITIAL ENQUIRIES",

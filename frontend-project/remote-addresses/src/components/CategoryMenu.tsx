@@ -1,27 +1,17 @@
-import React from 'react';
 import type { CategoryMenuProps } from '../types/CategoryMenuProps';
-import { ChevronLeft, Heart, Utensils, Bath, User, Stethoscope, House, Scale } from 'lucide-react';
-
-const CATEGORIES = [
-  { id: 'all', label: 'All Resources', icon: Heart  },
-  { id: 'food', label: 'Food', icon: Utensils },
-  { id: 'showers', label: 'Showers', icon: Bath },
-  { id: 'day centres', label: 'Day Centres', icon: User },
-  { id: 'healthcare', label: 'Healthcare', icon: Stethoscope },
-  { id: 'free legal aid', label: 'Free Legal Aid', icon: Scale },
-  { id: 'domiciliation', label: 'Domiciliation', icon: House },
-];
+import { ChevronLeft } from 'lucide-react';
+import { CATEGORIES } from '../constants/Categories';
 
 function cn(...classes: (string | boolean | undefined | null)[]) {
   return classes.filter(Boolean).join(' ');
 }
 
-export const CategoryMenu: React.FC<CategoryMenuProps> = ({ 
+export const CategoryMenu = ({ 
   activeCategory, 
   onCategoryChange, 
   isOpen, 
   onToggle 
-}) => {
+}: CategoryMenuProps) => {
   return (
     <aside
       className={cn(
@@ -48,7 +38,7 @@ export const CategoryMenu: React.FC<CategoryMenuProps> = ({
           "mb-4 px-3 text-xs font-semibold text-gray-400 uppercase tracking-wider transition-opacity",
           !isOpen && "opacity-0"
         )}>
-          Guide Steps
+          Categories
         </h2>
 
         <ul className="space-y-2">

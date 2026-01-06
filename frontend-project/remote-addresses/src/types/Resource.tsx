@@ -6,4 +6,5 @@ export interface Resource {
   address: string;
   hours: string;
   description?: string;
+  phone?: string;
 }

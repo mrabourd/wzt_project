@@ -1,22 +1,12 @@
-import React from 'react';
 import type { CategoryMenuProps } from '../types/CategoryMenuProps';
-import { ChevronLeft, CircleQuestionMark, Download, Folder, User, File, House, Scale } from 'lucide-react';
-
-export const CATEGORIES = [
-  { id: 'what', label: 'Asylum, what is that?', icon: CircleQuestionMark  },
-  { id: 'permits', label: 'Residence permits', icon: Download },
-  { id: 'first', label: 'First reception', icon: Folder },
-  { id: 'application', label: 'Asylum application', icon: User },
-  { id: 'procedures', label: 'Asylum procedures', icon: File },
-  { id: 'ofpra', label: 'Ofpra file and interview', icon: Scale },
-  { id: 'cnda', label: 'Appeal to CNDA', icon: House },
-];
+import  { CATEGORIES } from '../constants/Categories'
+import { ChevronLeft } from 'lucide-react';
 
 function cn(...classes: (string | boolean | undefined | null)[]) {
   return classes.filter(Boolean).join(' ');
 }
 
-export const Sidebar: React.FC<CategoryMenuProps> = ({ activeCategory, onCategoryChange, isOpen, onToggle }) => {
+export const Sidebar = ({ activeCategory, onCategoryChange, isOpen, onToggle }: CategoryMenuProps) => {
 return (
     <aside
       className={cn(
