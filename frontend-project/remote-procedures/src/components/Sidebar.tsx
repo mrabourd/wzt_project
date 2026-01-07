@@ -6,7 +6,11 @@ function cn(...classes: (string | boolean | undefined | null)[]) {
   return classes.filter(Boolean).join(' ');
 }
 
-export const Sidebar = ({ activeCategory, onCategoryChange, isOpen, onToggle }: CategoryMenuProps) => {
+export const Sidebar = ({ 
+  activeCategory, 
+  onCategoryChange, 
+  isOpen, 
+  onToggle }: CategoryMenuProps) => {
 return (
     <aside
       className={cn(

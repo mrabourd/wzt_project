@@ -1,7 +1,11 @@
 import { SunIcon, MoonIcon } from '@heroicons/react/24/outline';
 
-// --- Mode ---
-export default function Mode ({ darkMode, setDarkMode }: { darkMode: boolean, setDarkMode: (val: boolean) => void }) {
+export const Mode = ({ 
+    darkMode, 
+    setDarkMode 
+  }: { 
+    darkMode: boolean, 
+    setDarkMode: (val: boolean) => void }) => {
   return (
       <button
         onClick={() => setDarkMode(!darkMode)}

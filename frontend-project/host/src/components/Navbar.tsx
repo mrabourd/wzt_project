@@ -2,14 +2,14 @@ import './../App.css';
 import { useLocation, Link } from 'react-router-dom';
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { NAVIGATION_ITEMS } from '../constants/Navigation';
+import { NAVIGATION } from '../constants/Navigation';
 
-function classNames(...classes: (string | boolean | undefined | null)[]) {
+function cn(...classes: (string | boolean | undefined | null)[]) {
   return classes.filter(Boolean).join(' ');
 }
 
 // --- Navbar ---
-export default function Navbar() {
+export const Navbar = () => {
   const location = useLocation();
 
   return (
@@ -40,7 +40,7 @@ export default function Navbar() {
 
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                {NAVIGATION_ITEMS.map((item) => {
+                {NAVIGATION.map((item) => {
 
                   const isCurrent = location.pathname === item.href;
 
@@ -49,7 +49,7 @@ export default function Navbar() {
                       key={item.name}
                       to={item.href}
                       aria-current={isCurrent ? 'page' : undefined}
-                      className={classNames(
+                      className={cn(
                         isCurrent 
                           ? `bg-${item.color} text-white`
                           : 'text-gray-300/300 hover:bg-white/5 hover:text-gray-400 dark:hover:text-white',
@@ -69,7 +69,7 @@ export default function Navbar() {
 
       <DisclosurePanel className="sm:hidden backdrop-blur-md">
         <div className="space-y-1 px-2 pt-2 pb-3">
-          {NAVIGATION_ITEMS.map((item) => {
+          {NAVIGATION.map((item) => {
             const isCurrent = location.pathname === item.href;
             
             return (
@@ -78,7 +78,7 @@ export default function Navbar() {
                 as={Link}
                 to={item.href}
                 aria-current={isCurrent ? 'page' : undefined}
-                className={classNames(
+                className={cn(
                   isCurrent 
                     ? 'bg-guide-title-700 text-white' 
                     : 'text-gray-300/300 hover:bg-white/5 hover:text-gray-400 dark:hover:text-white',
